@@ -1,0 +1,28 @@
+1.book database
+	-table: users
+		-user_id integer primary key, unique
+		-username varchar
+		-email varchar
+		-password SHA protected
+
+	-table: book
+		-owner foreign key (user_id from users table)
+		-book_id integer primary key, unique
+		-title varchar
+		-author varchar
+		-book_cover image file
+		-rating double
+		-date_added dateformat
+
+2.php/html files
+	-includes:
+		-header.html
+		-footer.html
+		-style.css
+	-login.php
+	-home.php
+	-bookdetails.php
+	-add_book.php
+	-edit_book.php
+	-delete_book.php
+	-logout.php
